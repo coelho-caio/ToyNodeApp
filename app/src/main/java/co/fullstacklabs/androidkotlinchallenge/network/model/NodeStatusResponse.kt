@@ -5,7 +5,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-internal data class NodeStatusResponse(
+data class NodeStatusResponse(
     @Json(name = "node_name")
     val nodeName: String
 )

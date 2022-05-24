@@ -19,6 +19,8 @@ object Versions {
     const val retrofitMoshi = "2.9.0"
     const val okHttpLog = "4.9.0"
     const val moshi = "1.12.0"
+    const val mockk = "1.12.4"
+    const val coreTest = "2.1.0"
 }
 
 object Libs {
@@ -39,6 +41,9 @@ object Libs {
     const val androidEspresso = "androidx.test.espresso:espresso-core:${Versions.androidEspresso}"
     const val androidNavigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.androidNavigation}"
     const val androidNavigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.androidNavigation}"
+    const val testToolsKoin = "io.insert-koin:koin-test:${Versions.koin}"
+    const val testKoin = "io.insert-koin:koin-test-junit4:${Versions.koin}"
+    const val mockk = "io.mockk:mockk:${Versions.mockk}"
     const val koinAndroid = "io.insert-koin:koin-android:${Versions.koin}"
     const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
     const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
@@ -51,6 +56,7 @@ object Libs {
     const val moshi = "com.squareup.moshi:moshi:${Versions.moshi}"
     const val moshiKotlin = "com.squareup.moshi:moshi-kotlin:${Versions.moshi}"
     const val moshiCodegenKapt = "com.squareup.moshi:moshi-kotlin-codegen:${Versions.moshi}"
+    const val coreTest = "androidx.arch.core:core-testing:${Versions.coreTest}"
 }
 
 object Plugins {

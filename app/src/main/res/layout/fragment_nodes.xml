@@ -44,4 +44,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:listitem="@layout/item_node" />
 
+    <ProgressBar
+        android:id="@+id/pb_node_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

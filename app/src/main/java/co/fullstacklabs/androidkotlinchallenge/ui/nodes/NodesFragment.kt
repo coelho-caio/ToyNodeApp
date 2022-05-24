@@ -1,6 +1,8 @@
 package co.fullstacklabs.androidkotlinchallenge.ui.nodes
 
 import android.os.Bundle
+import android.widget.Toast
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DefaultItemAnimator
 import co.fullstacklabs.androidkotlinchallenge.R
 import co.fullstacklabs.androidkotlinchallenge.base.BaseFragment
@@ -23,6 +25,16 @@ class NodesFragment: BaseFragment(R.layout.fragment_nodes) {
     override fun setupObservers() {
         observe(viewModel.nodes) {
             adapter.data = it
+        }
+        observe(viewModel.state){
+            binding.pbNodeFragment.isVisible = it == NodeContract.State.Loading
+            when(it){
+                is NodeContract.State.Success ->Toast.makeText(requireContext(), "information fetched successfully", Toast.LENGTH_LONG).show()
+                is NodeContract.State.Error -> Toast.makeText(requireContext(), "We couldn't fetch all information", Toast.LENGTH_LONG).show()
+                else -> {
+
+                }
+            }
         }
     }
 

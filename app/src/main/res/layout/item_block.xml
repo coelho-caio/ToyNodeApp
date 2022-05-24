@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/background_block"
+    android:layout_marginBottom="4dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title_item_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/blue_title"
+            app:textAllCaps="true"
+            tools:text="001" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_subtitle_item_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit."
+            android:textSize="14sp"
+            android:layout_marginHorizontal="6dp"
+            android:textColor="@color/black_subtitle"/>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

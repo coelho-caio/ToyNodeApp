@@ -6,7 +6,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-internal data class NodeBlockResponse(
+data class NodeBlock(
     @Json(name = "id")
     val id: String,
 
@@ -17,7 +17,7 @@ internal data class NodeBlockResponse(
     val attributes: NodeAttributes
 )
 
-internal fun NodeBlockResponse.toDomain() =
+internal fun NodeBlock.toDomain() =
     NodeBlockModel(
         id = this.id,
         type = this.type,

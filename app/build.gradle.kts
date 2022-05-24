@@ -76,6 +76,7 @@ dependencies {
     // Room
     implementation(Libs.roomRuntime)
     implementation(Libs.roomKtx)
+    implementation("androidx.test.ext:junit-ktx:1.1.3")
     kapt(Libs.roomCompiler)
 
     // Retrofit
@@ -94,6 +95,10 @@ dependencies {
     // Test
     testImplementation(Libs.jUnit)
     testImplementation(Libs.coroutineTest)
+    testImplementation(Libs.testKoin)
+    testImplementation(Libs.mockk)
+    testImplementation(Libs.testToolsKoin)
+    testImplementation(Libs.coreTest)
     androidTestImplementation(Libs.androidExtJUnit)
     androidTestImplementation(Libs.androidEspresso)
 }

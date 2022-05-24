@@ -16,4 +16,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="success">#1E9A57</color>
     <color name="danger">#D94238</color>
+    <color name="blue_title">#304FFE</color>
+    <color name="black_subtitle">#263238</color>
+    <color name="background_block">#1F000000</color>
 </resources>

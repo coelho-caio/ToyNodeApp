@@ -32,8 +32,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:paddingHorizontal="16dp"
+            android:layout_marginBottom="12dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mtvTitle"
+            app:layout_constraintBottom_toTopOf="@+id/rv_item_list_node"
             android:textColor="@color/blue_gray_200"
             style="@style/Paragraph"
             tools:text="@string/url_sample"/>
@@ -72,19 +74,22 @@
             app:layout_constraintTop_toTopOf="@+id/mtvStatus"
             app:layout_constraintBottom_toBottomOf="@+id/mtvStatus"/>
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/mtvExpanded"
-            android:layout_width="wrap_content"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_item_list_node"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:visibility="gone"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
-            android:text="@string/expanded_sample"
-            android:paddingHorizontal="16dp"
+            android:paddingHorizontal="13dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mtvUrl"
-            android:textColor="@color/blue_gray_200"
-            style="@style/Paragraph" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/Paragraph"
+            tools:listitem="@layout/item_block"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="4"
+            tools:visibility="visible"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
